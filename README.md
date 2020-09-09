@@ -11,7 +11,7 @@
 
 ## Video Explanation
 
-Here is the [video explanation](https://www.loom.com/share/46f67ee7151d49ce8a1b3aedc9c363c7) of this project.
+Here is the [video explanation](https://www.loom.com/share/b45b802d56a64ba8878064b7b5ba34ac) of this project.
 
 ## Prerequisites
 
@@ -27,7 +27,7 @@ then run "bundle"
 ## step 2 
 To start the bot run "ruby bin/bot"
 
-Then head over to telegram, search for "@randomeratorbot" then start the bot.
+Then head over to telegram, search for "@randomeratorBot" then start the bot.
 
 Once you start the the bot, it will give u a set of commands to excute.
 
@@ -37,7 +37,7 @@ Make sure that the bot is still running in the termenal.
 
 To test the code, first, you have to follow step 1 in the installation guide.
 
-after that just run "rspec lib/bot_testing_spec.rb" in the terminal
+after that just run "rspec spec/bot_testing_spec.rb" in the terminal
 
 ## Authors
 
