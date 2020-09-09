@@ -23,6 +23,7 @@ class Commander
             cmd.quote_respond
         when "/joke"
             cmd.joke_respond
+        else cmd.unknown_respond
         end
     end
 end

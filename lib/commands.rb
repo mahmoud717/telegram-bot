@@ -51,4 +51,8 @@ class Commands
         text = "#{setup}\n#{punchline}"
         @bot.api.send_message(chat_id: @message.chat.id, text: text)
     end
+    def unknown_respond
+        text = "I don't know what '#{@message.text}' is...\nTo see the list of available commands type '/commands'"
+        @bot.api.send_message(chat_id: @message.chat.id, text: text)
+    end
 end
