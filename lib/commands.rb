@@ -15,7 +15,7 @@ class Commands
     def greet_respond 
         greetings = ['bonjour', 'hola', 'hallo', 'sveiki', 'namaste', 'salaam', 'szia', 'halo', 'ciao'].sample.capitalize
         text = "#{greetings}, #{@message.from.first_name}."
-        @bot.api.send_message(chat_id: @message.chat.id, text: text)
+        @bot.api.send_message(chat_id: @message.chat.id, text: text) 
     end
     def commands_respond
         commands = "/greet :- To send a random greeting. \n/commands :- To show available commands. \n/gif :- To display a random gif meme. \n/quote :- To display a random quote. \n/joke :- To display a random Joke\n/dice :- to do a dice roll"
