@@ -38,7 +38,7 @@ class Commands
     def quote_respond
         response = HTTParty.get("https://favqs.com/api/qotd", headers: { 
             "Authorization" => "Token token=4f18598c7ede67654748830c993cca79"
-          })
+          }) 
         author = response["quote"]["author"]
         quote = response["quote"]["body"]
          text = "#{quote} \n #{author}"
