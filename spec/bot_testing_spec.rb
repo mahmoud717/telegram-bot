@@ -1,4 +1,4 @@
-require 'telegram/bot'
+require_relative 'telegram/bot'
 describe Telegram::Bot::Exceptions::ResponseError do
   subject do
     begin

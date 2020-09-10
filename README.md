@@ -1,6 +1,6 @@
 # Randomizer Telegram Bot
 
-> This is a Telegram bot that gives you random operations to excute such as: do a dice roll, a random quote, a random joke...etc
+> This is a Telegram bot that gives you random operations to execute such as: do a dice roll, a random quote, a random joke...etc
 
 ## Built With
 
@@ -15,7 +15,7 @@ Here is the [video explanation](https://www.loom.com/share/b45b802d56a64ba887806
 
 ## Prerequisites
 
-To get this project up and running locally, just clone the repo to your local directory and follw the installation procces.
+To get this project up and running locally, just clone the repo to your local directory and follow the installation procces.
 
 ### Installation
 
@@ -29,7 +29,7 @@ To start the bot run "cd bin" then run "ruby bot"
 
 Then head over to telegram, search for "@randomeratorBot" then start the bot.
 
-Once you start the the bot, it will give u a set of commands to excute.
+Once you start the the bot, it will give u a set of commands to execute.
 
 Make sure that the bot is still running in the termenal. 
 

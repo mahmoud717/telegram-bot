@@ -1,4 +1,4 @@
-require '../lib/commands.rb'
+require_relative '../lib/commands.rb'
 class Commander
   attr_reader :message, :bot
   def initialize(message, bot)
@@ -10,26 +10,32 @@ class Commander
     cmd = Commands.new(@message, @bot)
     case @message.text
     when '/start'
-      cmd.start_respond
+      text = cmd.start_respond
+      @bot.api.send_message(chat_id: @message.chat.id, text: text)
     when '/stop'
-      cmd.stop_respond
+      text = cmd.stop_respond
+      @bot.api.send_message(chat_id: @message.chat.id, text: text)
     when '/greet'
-      cmd.greet_respond
+      text = cmd.greet_respond
+      @bot.api.send_message(chat_id: @message.chat.id, text: text)
     when '/gif'
-      cmd.gif_respond
+      animation = cmd.gif_respond
+      @bot.api.send_animation(chat_id: @message.chat.id, animation: animation)
     when '/commands'
-      cmd.commands_respond
+      text = cmd.commands_respond
+      @bot.api.send_message(chat_id: @message.chat.id, text: text)
     when '/dice'
-      cmd.dice_respond
+      text = cmd.dice_respond
+      @bot.api.send_message(chat_id: @message.chat.id, text: text)
     when '/quote'
-      cmd.quote_respond
+      text = cmd.quote_respond
+      @bot.api.send_message(chat_id: @message.chat.id, text: text)
     when '/joke'
-      cmd.joke_respond
-    else cmd.unknown_respond
+      text = cmd.joke_respond
+      @bot.api.send_message(chat_id: @message.chat.id, text: text)
+    else
+      text = cmd.unknown_respond
+      @bot.api.send_message(chat_id: @message.chat.id, text: text)
     end
-  end
-
-  def a7a
-    true
   end
 end
